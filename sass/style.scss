@@ -1,0 +1,100 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .tittle_logo{
+        width: 20%;
+    }
+   .tittle_logo img{
+        height: 50px;
+    }
+    .tittle_text{
+       
+        width: 50%;
+       
+    }
+    .tittle_text ul {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    li{
+     font-size: 20px;           
+          a{
+      color: rgb(38, 66, 10);
+                transition: .4s;
+                &:hover
+                
+{
+                    color: #b4b91e;
+                }    
+            }
+            }
+           
+        
+    }
+    button{
+        font-size: 20px;
+        background-color: #426f96;
+        color: #fff;
+        padding: 10px 20px;
+        border: #426f96;
+        border-radius: 10px;
+        
+        &:hover{
+            background-color: orange; 
+            color: black;
+        }
+}
+}
+@mixin make_round($color,$f){
+    color:$color;
+    font-size: $f;
+
+}
+$primary_color:#d5d51f;
+$secendery_color:red;
+#banner{
+    background-color: #1e6a9a;
+    .main_banner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner_text h1{
+        text-align: center;
+        @include make_round ($secendery_color,40px)
+        
+    }
+    .banner_text p{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        @include make_round ($primary_color,20px)
+        
+        
+    }
+    .baner_img{
+        padding: 100px 0;
+    }
+
+.baner_img img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+}
